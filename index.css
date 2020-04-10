@@ -14,7 +14,7 @@ form {
     flex-wrap: wrap;
     width: 100%;
     margin: 20px 0px;
-    font-size: 18px;
+    
 }
 label {
     width: 40%;
@@ -23,12 +23,14 @@ label {
     padding:5px;
     margin-bottom: 5px;
     color: white;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 20px;
 }
 
 input, select {
     margin-bottom: 5px;
     width: 55%;
+    font-size: 20px;
 }
 
 legend {
@@ -53,7 +55,14 @@ p {
 }
 
 @media (max-width: 740px) {
-    button {
-        margin-left: 0; 
+    label {
+        width: 60%;
     }
+
+    
+    input, select {
+        width: 100%;
+    }
+  
+
 }
