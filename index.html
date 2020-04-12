@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Covid-19 web app by Anthonia Okafor</title>
     <link rel="stylesheet" href="./index.css" />
+    <script defer src="estimator.js"></script>
 </head>
 <body>
     <header>
@@ -13,20 +14,20 @@
             <p>Fill in the details below</p>
     </header>
     <main>
-        <form>
+        <form action="index.html" method="Get" id= "covid-19EstimateForm" onsubmit="return covid19ImpactEstimator(this)">
             <fieldset>
                 <legend>Estimator:</legend>
                 <div class= "labelInput">
                     <label for="data-population">Population</label><input type="number" id="data-population">
                 </div>
                 <div class="labelInput">
-                    <label for="data-time-to-elapse">Time to Elapse</label><input type="number" id="data-time-to-elapse">
+                    <label for="data-time-to-elapse">Time to Elapse</label><input type="number" name ="data-time-to-elapse" id="data-time-to-elapse">
                 </div>
                 <div class="labelInput">
-                    <label for="data-reported-cases">Reported Cases</label><input type="number" id="data-reported-cases">
+                    <label for="data-reported-cases">Reported Cases</label><input type="number" name="data-reported-cases" id="data-reported-cases">
                 </div>
                 <div class="labelInput">
-                    <label for="data-total-hospital-beds">Total Hospital Beds</label><input type="number" id="data-total-hospital-beds">
+                    <label for="data-total-hospital-beds">Total Hospital Beds</label><input type="number" name="data-total-hospital-beds" id="data-total-hospital-beds">
                 </div>
                 <div class="labelInput">
                     <label for="data-period-type">Period Type</label>
@@ -38,7 +39,7 @@
                     </select>
                 </div>
                 <div class="button">
-                <button id="data-go-estimate">Submit</button>
+                <button id="data-go-estimate" onclick="covid19ImpactEstimator(data)">Submit</button>
                 </div>
 
 
