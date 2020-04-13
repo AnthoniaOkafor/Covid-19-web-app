@@ -1,12 +1,24 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+    
 body {
-    text-align: center
+    text-align: center;
+    background-image: url("./images/alinenok-unsplash.jpg");
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    /*background-position: center;
+    background-size: cover;*/
+}
+
+h1 {
+    color: red;
 }
 form {
     display: inline-block;
     width: 60%;
-    background-color:grey;
+    background-color:orange;
     text-align: left;
-    
+    font-family: 'Poppins', sans-serif;
 }
 
 .labelInput {
