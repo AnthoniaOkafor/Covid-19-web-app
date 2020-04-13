@@ -11,48 +11,51 @@
 <body>
     <header>
             <h1> Covid-19 Estimator</h1>
-            <p>Fill in the details below</p>
+            <p class="pHeader">Fill in the details below</p>
     </header>
     <main>
-        <form action="index.html" method="Get" id= "covid-19EstimateForm" onsubmit="return covid19ImpactEstimator(this)">
+        <form action="index.html" method="POST" id= "covid-19EstimateForm" onsubmit="return covid19ImpactEstimator(this)">
             <fieldset class="outer">
                 <legend class="outerLegend">Region Details:</legend>
                 <div class= "labelInput">
-                    <label for="data-region-name">Name</label><input type="text" name="data-region-name" id="data-region-name" value="Africa" required>
+                    <label for="data-region-name">Name</label><div class="nameInput"><input type="text" name="data-region-name" id="data-region-name" value="Africa" required>
+                        </div>
+        
                 </div>
                 <div class="labelInput">
-                    <label for="data-region-avgAge">Average Age</label><input type="number" name ="data-region-avgAge" id="data-region-avgAge" value="30" required>
+                    <label for="data-region-avgAge">Average Age</label><div class="avgAgeInput"><input type="number" name ="data-region-avgAge" id="data-region-avgAge" value="30" required></div>
                 </div>
                 <div class="labelInput">
-                    <label for="data-region-avgDailyIncome">Average Daily Income ($)</label><input type="number" name="data-region-avgDailyIncome" id="data-region-avgDailyIncome" value="5" required>
+                    <label for="data-region-avgDailyIncome">Average Daily Income ($)</label><div class="avgIncomeInput"><input type="number" name="data-region-avgDailyIncome" id="data-region-avgDailyIncome" value="5" required></div>
                 </div>
                 <div class="labelInput">
-                    <label for="data-region-avgDailyIncPopulation">Average Daily Income Population</label><input type="number" name="data-region-avgDailyIncPopulation" id="data-region-avgDailyIncPopulation" value="0.80" required>
+                    <label for="data-region-avgDailyIncPopulation">Average Daily Income Population</label><div class="avgPopulationInput"><input type="number" name="data-region-avgDailyIncPopulation" id="data-region-avgDailyIncPopulation" value="0.80" required></div>
                 </div>
             </fieldset>
 
             <fieldset class="outer">
                 <legend class="outerLegend">Infection Details:</legend>
                 <div class= "labelInput">
-                    <label for="data-population">Population</label><input type="number" id="data-population" value="1332277026" required>
+                    <label for="data-population">Population</label><div class="populationInput"><input type="number" id="data-population" value="1332277026" required></div>
                 </div> 
                 <div class="labelInput">
-                    <label for="data-reported-cases">Reported Cases</label><input type="number" name="data-reported-cases" id="data-reported-cases" value="1001" required>
+                    <label for="data-reported-cases">Reported Cases</label><div class="reportedCasesInput"><input type="number" name="data-reported-cases" id="data-reported-cases" value="1001" required></div>
                 </div>
                 <div class="labelInput">
-                    <label for="data-total-hospital-beds">Total Hospital Beds</label><input type="number" name="data-total-hospital-beds" id="data-total-hospital-beds" value="2350414" required>
+                    <label for="data-total-hospital-beds">Total Hospital Beds</label><div class="hospitalBedsInput"><input type="number" name="data-total-hospital-beds" id="data-total-hospital-beds" value="2350414" required></div>
                 </div>
                 <div class="labelInput">
-                    <label for="data-time-to-elapse">Time to Elapse</label><input type="number" name ="data-time-to-elapse" id="data-time-to-elapse" value="14" required>
+                    <label for="data-time-to-elapse">Time to Elapse</label><div class="elapseTimeInput"><input type="number" name ="data-time-to-elapse" id="data-time-to-elapse" value="14" required></div>
                 </div>
                 <div class="labelInput">
                     <label for="data-period-type">Period Type</label>
+                    <div class="selectPeriodType">
                     <select id="data-period-type" required>
                         <option value="days">days</option>
                         <option value="weeks">weeks</option>
                         <option value="months">months</option>
-
                     </select>
+                    </div>
                 </div>
                 <div class="button">
                     <button id="data-go-estimate" onclick="covid19ImpactEstimator(data)">Submit</button>
@@ -64,50 +67,70 @@
                 <fieldset class="inner">
                     <legend class="innerLegend">Currently Infected</legend>
                         <div class= "labelInput">
-                            <label for="data-population">Estimated</label><input type="number" id="data-population" value="1332277026" required>
+                            <label for="data-impCurInfected">Impact</label><div class="impCurInfectedInput"><input type="number" name="data-impCurInfected" id="data-impCurInfected"></div>
                         </div>
                         <div class= "labelInput">
-                            <label for="data-population">Severe Estimated</label><input type="number" id="data-population" value="1332277026" required>
-                        </div>
-                </fieldset>
-                
-                <fieldset class="inner">
-                    <legend class="innerLegend">Currently Infected</legend>
-                        <div class= "labelInput">
-                            <label for="data-population">Estimated</label><input type="number" id="data-population" value="1332277026" required>
-                        </div>
-                        <div class= "labelInput">
-                            <label for="data-population">Severe Estimated</label><input type="number" id="data-population" value="1332277026" required>
+                            <label for="data-sevCurInfected">Severe Impact</label><div class="sevCurInfectedInput"><input type="number" name="data-sevCurInfected" id="data-sevCurInfected"></div>
                         </div>
                 </fieldset>
                 
                 <fieldset class="inner">
-                    <legend class="innerLegend">Currently Infected</legend>
+                    <legend class="innerLegend">Infections by Elapsed Time</legend>
                         <div class= "labelInput">
-                            <label for="data-population">Estimated</label><input type="number" id="data-population" value="1332277026" required>
+                            <label for="data-impInfections">Impact</label><div class="impInfectionsInput"><input type="number" name="data-impInfections" id="data-impInfections"></div>
                         </div>
                         <div class= "labelInput">
-                            <label for="data-population">Severe Estimated</label><input type="number" id="data-population" value="1332277026" required>
+                            <label for="data-sevInfections">Severe Impact</label><div class="sevInfectionsInput"><input type="number" name="data-sevInfections" id="data-sevInfections"></div>
                         </div>
                 </fieldset>
                 
                 <fieldset class="inner">
-                    <legend class="innerLegend">Currently Infected</legend>
+                    <legend class="innerLegend">Severe Cases By Elapsed Time</legend>
                         <div class= "labelInput">
-                            <label for="data-population">Estimated</label><input type="number" id="data-population" value="1332277026" required>
+                            <label for="data-impSevereCases">Impact</label><div class="impSevereCasesInput"><input type="number" name="data-impSevereCases" id="data-impSevereCases"></div>
                         </div>
                         <div class= "labelInput">
-                            <label for="data-population">Severe Estimated</label><input type="number" id="data-population" value="1332277026" required>
+                            <label for="data-sevSevereCases">Severe Impact</label><div class="sevSevereCasesInput"><input type="number" name="data-sevSevereCases" id="data-sevSevereCases"></div>
+                        </div>
+                </fieldset>
+                
+                <fieldset class="inner">
+                    <legend class="innerLegend">Hospital Beds</legend>
+                        <div class= "labelInput">
+                            <label for="data-impHospitalBeds">Impact</label><div class="impHospitalBedsInput"><input type="number" name="data-impHospitalBeds" id="data-impHospitalBeds"></div>
+                        </div>
+                        <div class= "labelInput">
+                            <label for="data-sevHospitalBeds">Severe Impact</label><div class="sevHospitalBedsInput"><input type="number" name="data-sevHospitalBeds" id="data-sevHospitalBeds"></div>
                         </div>
                 </fieldset>
 
                 <fieldset class="inner">
-                    <legend class="innerLegend">Currently Infected</legend>
+                    <legend class="innerLegend">Cases for ICU</legend>
                         <div class= "labelInput">
-                            <label for="data-population">Estimated</label><input type="number" id="data-population" value="1332277026" required>
+                            <label for="data-impICU">Impact</label><div class="impICUInput"><input type="number" name="data-impICU" id="data-impICU"></div>
                         </div>
                         <div class= "labelInput">
-                            <label for="data-population">Severe Estimated</label><input type="number" id="data-population" value="1332277026" required>
+                            <label for="data-sevICU">Severe Impact</label><div class="sevICUInput"><input type="number" name="data-sevICU" id="data-sevICU"></div>
+                        </div>
+                </fieldset>
+
+                <fieldset class="inner">
+                    <legend class="innerLegend">Cases for Ventilator</legend>
+                        <div class= "labelInput">
+                            <label for="data-impVentilator">Impact</label><div class="impVentilatorInput"><input type="number" name="data-impVentilator" id="data-impVentilator"></div>
+                        </div>
+                        <div class= "labelInput">
+                            <label for="data-sevVentilator">Severe Impact</label><div class="sevVentilatorInput"><input type="number" name="data-sevVentilator" id="data-sevVentilator"></div>
+                        </div>
+                </fieldset>
+
+                <fieldset class="inner">
+                    <legend class="innerLegend">Dollars in Flight</legend>
+                        <div class= "labelInput">
+                            <label for="data-impDollarsInFlight">Impact</label><div class="impDollarsInFlightInput"><input type="number" name="data-impDollarsInFlight" id="data-impDollarsInFlight"></div>
+                        </div>
+                        <div class= "labelInput">
+                            <label for="data-sevDollarsInFlight">Severe Impact</label><div class="sevVentilatorInput"><input type="number" name="data-sevDollarsInFlight" id="data-sevDollarsInFlight"></div>
                         </div>
                 </fieldset>
                 
