@@ -13,6 +13,7 @@ body {
 h1 {
     color: red;
 }
+
 form {
     display: inline-block;
     width: 60%;
@@ -21,6 +22,25 @@ form {
     font-family: 'Poppins', sans-serif;
 }
 
+.outerLegend {
+    font-size: 20px;
+    text-align: center
+}
+
+.innerLegend {
+    font-size: 20px;
+}
+
+.outer {
+   margin: 20px;
+   border-radius: 50px 0;
+}
+
+.inner {
+    margin: 20px 5px;
+    border-radius: 20px;
+ }
+ 
 .labelInput {
     display: flex;
     flex-wrap: wrap;
@@ -32,7 +52,7 @@ label {
     width: 40%;
     background-color: blue;
     margin-right: 5px;
-    padding:5px;
+    padding: 2px;   
     margin-bottom: 5px;
     color: white;
     font-weight: bold;
@@ -45,14 +65,9 @@ input, select {
     font-size: 20px;
 }
 
-legend {
-    font-size: 20px;
-    text-align: center
-
-}
 .button {
     display: flex;
-    margin: 20px 20px;
+    margin: 35px 20px 20px 20px;
 }
 button {
     padding: 5px;
