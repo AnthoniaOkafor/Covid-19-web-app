@@ -25,7 +25,7 @@ h1 {
 form {
     display: inline-block;
     width: 60%;
-    background-color:#20231f;
+    background-color:#f5f5dc;
     text-align: left;
     font-family: 'Sofia', sans-serif;
 }
@@ -65,7 +65,7 @@ label {
     width: 40%;
     margin-right: 5px;
     padding: 2px;   
-    color: orange;
+    color: black;
     font-size: 20px;
     border-radius: 5px;
 }
@@ -253,7 +253,7 @@ padding: 4px;
 }
 
 .impInfectionsInput::after {
-    content: "infections within 'time to Elapse'";
+    content: "infections within the specified period";
     display: block;
     margin: 0;
     font-size: 18px;
@@ -286,7 +286,7 @@ padding: 4px;
     padding: 4px;
 }
 .impSevereCasesInput::after {
-    content: "infected people within elapsed time who require hospitalisation";
+    content: "infected people within the period who would require hospitalisation";
     display: block;
     margin: 0;
     font-size: 18px;
@@ -352,7 +352,7 @@ padding: 4px;
 }
 
 .impICUInput::after {
-    content: "infected people within elapsed time who require ICU";
+    content: "infected people within the period who would require ICU";
     display: block;
     margin: 0;
     font-size: 18px;
@@ -384,7 +384,7 @@ padding: 4px;
 }
 
 .impVentilatorInput::after {
-    content: "infected people within elapsed time who require ventilator";
+    content: "infected people within the period who would require ventilator";
     display: block;
     margin: 0;
     font-size: 18px;
