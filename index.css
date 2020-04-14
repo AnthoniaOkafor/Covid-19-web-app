@@ -1,10 +1,18 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-    
+@import "https://fonts.googleapis.com/css?family=Sofia:300,400,500,600,700&displey=swap";
+
+html.fonts-loaded body {
+    font-family: 'Sofia', sans-serif;
+}
+
+html.fonts-loaded form {
+    font-family: 'Sofia', sans-serif;
+}
+
 body {
     text-align: center;
     background-image: url("./images/alinenok-unsplash.jpg");
     
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sofia', sans-serif;
     background-color: black;
     /*background-position: center;
     background-size: cover;*/
@@ -17,9 +25,9 @@ h1 {
 form {
     display: inline-block;
     width: 60%;
-    background-color:orange;
+    background-color:#20231f;
     text-align: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sofia', sans-serif;
 }
 
 .outerLegend {
@@ -57,7 +65,7 @@ label {
     width: 40%;
     margin-right: 5px;
     padding: 2px;   
-    color: white;
+    color: orange;
     font-size: 20px;
     border-radius: 5px;
 }
@@ -74,7 +82,8 @@ padding: 4px;
     content: "name of region";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 .avgAgeInput {
     width: 55%; 
@@ -88,7 +97,8 @@ padding: 4px;
     content: "average age in region";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 .avgIncomeInput {
     width: 55%; 
@@ -102,7 +112,8 @@ padding: 4px;
     content: "average daily income in region";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .avgPopulationInput {
@@ -117,7 +128,8 @@ padding: 4px;
     content: "population earning avg. daily income(%)";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .populationInput {
@@ -131,7 +143,8 @@ padding: 4px;
     content: "population of the region";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .reportedCasesInput {
@@ -146,7 +159,8 @@ padding: 4px;
     content: "reported cases of Covid-19";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .hospitalBedsInput {
@@ -160,7 +174,8 @@ padding: 4px;
     content: "number of hospital beds in the region";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 .elapseTimeInput {
     width: 55%; 
@@ -175,7 +190,8 @@ padding: 4px;
     content: "start of infection to a time in the future";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .selectPeriodType {
@@ -190,7 +206,8 @@ padding: 4px;
     content: "length of the period of infection";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .impCurInfectedInput {
@@ -206,7 +223,8 @@ padding: 4px;
     content: "number of currently infected people";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .sevCurInfectedInput {
@@ -221,7 +239,8 @@ padding: 4px;
     content: "severe impact is impact * 50";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .impInfectionsInput {
@@ -237,7 +256,8 @@ padding: 4px;
     content: "infections within 'time to Elapse'";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .sevInfectionsInput {
@@ -253,7 +273,8 @@ padding: 4px;
     content: "severe impact is impact * 50";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .impSevereCasesInput {
@@ -268,7 +289,8 @@ padding: 4px;
     content: "infected people within elapsed time who require hospitalisation";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .sevSevereCasesInput {
@@ -283,7 +305,8 @@ padding: 4px;
     content: "severe impact is impact * 50";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .impHospitalBedsInput {
@@ -299,7 +322,8 @@ padding: 4px;
     content: "available hospital bed for the hospitalised";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .sevHospitalBedsInput {
@@ -315,7 +339,8 @@ padding: 4px;
     content: "severe impact is impact * 50";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .impICUInput {
@@ -330,7 +355,8 @@ padding: 4px;
     content: "infected people within elapsed time who require ICU";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .sevICUInput {
@@ -345,7 +371,8 @@ padding: 4px;
     content: "severe impact is impact * 50";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .impVentilatorInput {
@@ -360,7 +387,8 @@ padding: 4px;
     content: "infected people within elapsed time who require ventilator";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .sevVentilatorInput {
@@ -376,7 +404,8 @@ padding: 4px;
     content: "severe impact is impact * 50";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .impDollarsInFlightInput {
@@ -392,7 +421,8 @@ padding: 4px;
     content: "money economy will lose";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 .sevDollarsInFlightInput {
@@ -407,7 +437,8 @@ padding: 4px;
     content: "severe impact is impact * 50";
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    color: blue
 }
 
 
@@ -429,7 +460,7 @@ button {
 
 .pHeader {
     font-size: 18px;
-    color: blue;
+    color: white;
 }
 
 .p {
