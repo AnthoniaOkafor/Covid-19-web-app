@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" as="script" href="./estimator.js">
     <link rel="preconnect" as="style" href="./index.css">
-    <script defer src="estimator.js"></script>
+    
 </head>
 <body>
     <header>
@@ -39,21 +39,21 @@
             <fieldset class="outer">
                 <legend class="outerLegend">Infection Details:</legend>
                 <div class= "labelInput">
-                    <label for="data-population">Population</label><div class="populationInput"><input type="number" id="data-population" value="0" required></div>
+                    <label for="data-population">Population</label><div class="populationInput"><input type="number" id="data-population" value="0" data-population required></div>
                 </div> 
                 <div class="labelInput">
-                    <label for="data-reported-cases">Reported Cases</label><div class="reportedCasesInput"><input type="number" name="data-reported-cases" id="data-reported-cases" value="0" required></div>
+                    <label for="data-reported-cases">Reported Cases</label><div class="reportedCasesInput"><input type="number" name="data-reported-cases" id="data-reported-cases" data-reported-cases value="0" required></div>
                 </div>
                 <div class="labelInput">
-                    <label for="data-total-hospital-beds">Total Hospital Beds</label><div class="hospitalBedsInput"><input type="number" name="data-total-hospital-beds" id="data-total-hospital-beds" value="0" required></div>
+                    <label for="data-total-hospital-beds">Total Hospital Beds</label><div class="hospitalBedsInput"><input type="number" name="data-total-hospital-beds" id="data-total-hospital-beds" data-total-hospital-beds value="0" required></div>
                 </div>
                 <div class="labelInput">
-                    <label for="data-time-to-elapse">Estimated Period</label><div class="elapseTimeInput"><input type="number" name ="data-time-to-elapse" id="data-time-to-elapse" value="0" required></div>
+                    <label for="data-time-to-elapse">Estimated Period</label><div class="elapseTimeInput"><input type="number" name ="data-time-to-elapse" id="data-time-to-elapse" value="0" data-time-to-elapse required></div>
                 </div>
                 <div class="labelInput">
                     <label for="data-period-type">Period Type</label>
                     <div class="selectPeriodType">
-                    <select id="data-period-type" required>
+                    <select id="data-period-type" data-period-type required>
                         <option value="days">days</option>
                         <option value="weeks">weeks</option>
                         <option value="months">months</option>
@@ -62,7 +62,7 @@
                 </div>
             </fieldset>
             <div class="button">
-                <button id="data-go-estimate" onclick="covid19ImpactEstimator(data)">Submit</button>
+                <button id="data-go-estimate" onclick="covid19ImpactEstimator(data)" data-go-estimate>Submit</button>
             </div>
 
             <fieldset class="outer">
