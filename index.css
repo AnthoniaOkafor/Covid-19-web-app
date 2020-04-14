@@ -26,10 +26,12 @@ form {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
+    color: blue;
 }
 
 .innerLegend {
     font-size: 20px;
+    color: blue;
 }
 
 .outer {
@@ -48,11 +50,11 @@ form {
     flex-wrap: wrap;
     width: 100%;
     margin: 20px 0px;
+
     
 }
 label {
     width: 40%;
-    background-color: blue;
     margin-right: 5px;
     padding: 2px;   
     color: white;
@@ -180,7 +182,7 @@ padding: 4px;
     width: 55%; 
 }
 
-.selectPeriodType > input {
+.selectPeriodType > select {
     width: 100%;
     padding: 4px;
 }
@@ -408,9 +410,8 @@ padding: 4px;
     font-size: 14px;
 }
 
+
 input, select {
-    margin-bottom: 0px;
-    width: 55%;
     font-size: 20px;
     border-radius: 5px;
 }
@@ -441,12 +442,106 @@ button {
         margin-bottom: 5px;
     }
 
-    .nameInput {
-        width: 96%; 
+    .selectPeriodType {
+        width: 96%;   
     }
-    input, select {
+       
+    .nameInput {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    .nameInput > input {
         width: 100%;
     }
-  
+    
+    .avgAgeInput {
+        width: 96%; 
+    }
+
+    .avgIncomeInput {
+        width: 96%; 
+    }
+
+    .avgPopulationInput {
+        width: 96%; 
+    }
+
+    .populationInput {
+        width: 96%; 
+    }
+
+    .reportedCasesInput {
+        width: 96%; 
+    }
+
+    .hospitalBedsInput {
+        width: 96%; 
+    }
+
+    .elapseTimeInput {
+        width: 96%; 
+    }
+
+    .selectPeriodType {
+        width: 96%; 
+    }
+
+    .impCurInfectedInput {
+        width: 96%; 
+    }
+
+    .sevCurInfectedInput {
+        width: 96%; 
+    }
+
+    .impInfectionsInput {
+        width: 96%; 
+    }
+
+    .sevInfectionsInput {
+        width: 96%; 
+    }
+
+    .impSevereCasesInput {
+        width: 96%; 
+    }
+
+    .sevSevereCasesInput {
+        width: 96%; 
+    }
+
+    .impHospitalBedsInput {
+        width: 96%; 
+    }
+
+    .sevHospitalBedsInput {
+        width: 96%; 
+    }
+
+    .impICUInput {
+        width: 96%; 
+    }
+
+    .sevICUInput {
+        width: 96%; 
+    }
+
+    .impVentilatorInput {
+        width: 96%; 
+    }
+
+    .sevVentilatorInput {
+        width: 96%; 
+    }
+
+    .impDollarsInFlightInput {
+        width: 96%; 
+    }
+
+    .sevDollarsInFlightInput {
+        width: 96%; 
+    }
+    
 
 }
