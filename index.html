@@ -13,12 +13,12 @@
 </head>
 <body>
     <header>
-            <h1> Covid-19 Impact Estimator</h1>
+            <h1 id="heading"> Covid-19 Impact Estimator</h1>
             <p class="pHeader">Fill in the details below</p>
     </header>
     <main>
-    <!--    <form action="index.html" method="POST" id= "covid-19EstimateForm" onsubmit="return covid19ImpactEstimator()">-->
-            <form id= "covidi-19EstimateForm">
+        <div class="formBody">
+            <form id= "covid-19EstimateForm">
             <fieldset class="outer">
                 <legend class="outerLegend">Region Details:</legend>
                 <div class= "labelInput">
@@ -144,10 +144,15 @@
             </fieldset>
            
         </form>
+        </div>
     </main>
-    <!--<footer>
-        &copy;
-    </footer> -->
+    <footer>
+        <img src="./images/twitter1.png" height="30" width="30" />
+        <div class="twitterHandle">
+        <a href="https://twitter.com/twinkle_toni" target="_blank">@twinkle_toni</a>
+        </div>
+        <div class="linkNav"><a href = "#heading"> Go to the top</a></a></div>
+    </footer>
 
     <script src="estimator1.js"></script>
   
