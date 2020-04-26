@@ -1,15 +1,16 @@
 @import "https://fonts.googleapis.com/css?family=Sofia:300,400,500,600,700&display=swap";
 
-html.fonts-loaded body {
+/*html.fonts-loaded body {
     font-family: 'Sofia', sans-serif;
 }
 
 html.fonts-loaded form {
     font-family: 'Sofia', sans-serif;
-}
+}*/
 
 body {
     text-align: center;
+   
     /*background-image: url("./images/alinenok-unsplash.jpg");*/
     
     font-family: 'Sofia', sans-serif;
@@ -21,6 +22,13 @@ body {
 h1 {
     color: red;
 }
+h2 {
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
 
 form {
     display: inline-block;
@@ -466,6 +474,7 @@ button {
 .p {
     margin: 0;
 }
+
 
 @media (max-width: 740px) {
     label {

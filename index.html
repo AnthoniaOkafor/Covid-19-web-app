@@ -17,38 +17,39 @@
             <p class="pHeader">Fill in the details below</p>
     </header>
     <main>
-        <form action="index.html" method="POST" id= "covid-19EstimateForm" onsubmit="return covid19ImpactEstimator(this)">
+    <!--    <form action="index.html" method="POST" id= "covid-19EstimateForm" onsubmit="return covid19ImpactEstimator()">-->
+            <form id= "covidi-19EstimateForm">
             <fieldset class="outer">
                 <legend class="outerLegend">Region Details:</legend>
                 <div class= "labelInput">
-                    <label for="data-region-name">Name</label><div class="nameInput"><input type="text" name="data-region-name" id="data-region-name" value="Africa" required>
+                    <label for="data-region-name">Name</label><div class="nameInput"><input type="text" name="data-region-name" id="data-region-name" placeholder="Africa" required>
                         </div>
-        
+                </div>
+                <div class= "labelInput">
+                        <label for="data-population">Population</label><div class="populationInput"><input type="number" id="data-population" placeholder="66622705" data-population required></div>
+                    </div> 
+                <div class="labelInput">
+                    <label for="data-region-avgAge">Average Age</label><div class="avgAgeInput"><input type="number" name ="data-region-avgAge" id="data-region-avgAge" placeholder="21" required></div>
                 </div>
                 <div class="labelInput">
-                    <label for="data-region-avgAge">Average Age</label><div class="avgAgeInput"><input type="number" name ="data-region-avgAge" id="data-region-avgAge" value="0" required></div>
+                    <label for="data-region-avgDailyIncome">Average Daily Income ($)</label><div class="avgIncomeInput"><input type="number" name="data-region-avgDailyIncome" id="data-region-avgDailyIncome" placeholder="5" required></div>
                 </div>
                 <div class="labelInput">
-                    <label for="data-region-avgDailyIncome">Average Daily Income ($)</label><div class="avgIncomeInput"><input type="number" name="data-region-avgDailyIncome" id="data-region-avgDailyIncome" value="0" required></div>
-                </div>
-                <div class="labelInput">
-                    <label for="data-region-avgDailyIncPopulation">Average Daily Income Population</label><div class="avgPopulationInput"><input type="number" name="data-region-avgDailyIncPopulation" id="data-region-avgDailyIncPopulation" value="0" required></div>
+                    <label for="data-region-avgDailyIncPopulation">Average Daily Income Population</label><div class="avgPopulationInput"><input type="number" name="data-region-avgDailyIncPopulation" id="data-region-avgDailyIncPopulation" placeholder="1" required></div>
                 </div>
             </fieldset>
 
             <fieldset class="outer">
                 <legend class="outerLegend">Infection Details:</legend>
-                <div class= "labelInput">
-                    <label for="data-population">Population</label><div class="populationInput"><input type="number" id="data-population" value="0" data-population required></div>
-                </div> 
                 <div class="labelInput">
-                    <label for="data-reported-cases">Reported Cases</label><div class="reportedCasesInput"><input type="number" name="data-reported-cases" id="data-reported-cases" data-reported-cases value="0" required></div>
+                    <label for="data-reported-cases">Reported Cases</label><div class="reportedCasesInput"><input type="number" name="data-reported-cases" id="data-reported-cases" data-reported-cases placeholder="674" required></div>
                 </div>
                 <div class="labelInput">
-                    <label for="data-total-hospital-beds">Total Hospital Beds</label><div class="hospitalBedsInput"><input type="number" name="data-total-hospital-beds" id="data-total-hospital-beds" data-total-hospital-beds value="0" required></div>
+                    <label for="data-total-hospital-beds">Total Hospital Beds</label><div class="hospitalBedsInput"><input type="number" name="data-total-hospital-beds" id="data-total-hospital-beds" data-total-hospital-beds placeholder="1380614" required></div>
                 </div>
+                <h2>Estimation Period:</h2>
                 <div class="labelInput">
-                    <label for="data-time-to-elapse">Estimated Period</label><div class="elapseTimeInput"><input type="number" name ="data-time-to-elapse" id="data-time-to-elapse" value="0" data-time-to-elapse required></div>
+                    <label for="data-time-to-elapse">Period</label><div class="elapseTimeInput"><input type="number" name ="data-time-to-elapse" id="data-time-to-elapse" placeholder="58" data-time-to-elapse required></div>
                 </div>
                 <div class="labelInput">
                     <label for="data-period-type">Period Type</label>
@@ -62,7 +63,7 @@
                 </div>
             </fieldset>
             <div class="button">
-                <button id="data-go-estimate" onclick="covid19ImpactEstimator(data)" data-go-estimate>Submit</button>
+                <button id="data-go-estimate" onclick="covid19ImpactEstimator(); return false;" data-go-estimate>Submit</button>
             </div>
 
             <fieldset class="outer">
@@ -133,20 +134,22 @@
                             <label for="data-impDollarsInFlight">Impact</label><div class="impDollarsInFlightInput"><input type="number" name="data-impDollarsInFlight" id="data-impDollarsInFlight"></div>
                         </div>
                         <div class= "labelInput">
-                            <label for="data-sevDollarsInFlight">Severe Impact</label><div class="sevVentilatorInput"><input type="number" name="data-sevDollarsInFlight" id="data-sevDollarsInFlight"></div>
+                            <label for="data-sevDollarsInFlight">Severe Impact</label><div class="sevDollarsInFlightInput"><input type="number" name="data-sevDollarsInFlight" id="data-sevDollarsInFlight"></div>
                         </div>
                 </fieldset>
                 
                 <div class="button">
-                    <button id="data-reset" onclick="">Reset</button>
+                    <button type="reset" id="data-reset">Reset</button>
                 </div>
             </fieldset>
            
         </form>
     </main>
+    <!--<footer>
+        &copy;
+    </footer> -->
 
-    <script src="estimator.js"></script>
+    <script src="estimator1.js"></script>
   
-</body>
 </body>
 </html>
