@@ -1,18 +1,5 @@
 //const estimateButton = document.getElementById("data-go-estimate");
 
-/*const dataInput = {
-  region: {
-    name: 'Africa',
-    avgAge: 25.7,
-    avgDailyIncomeInUSD: 5,
-    avgDailyIncomePopulation: 0.91
-  },
-  periodType: 'days',
-  timeToElapse: 58,
-  reportedCases: 500,
-  population: 105622705,
-  totalHospitalBeds: 1580614
-};*/
 const covid19ImpactEstimator = () => {
 //estimateButton.onclick = (e) => {
   //e.preventDefault();
@@ -132,4 +119,3 @@ const avgDailyIncomePopulation = avgDailyIncPopulation.value;
   
 };
 //console.log(covid19ImpactEstimator());
-//export default covid19ImpactEstimator;
